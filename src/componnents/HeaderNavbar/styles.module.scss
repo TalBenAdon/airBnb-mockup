@@ -25,9 +25,31 @@
 
 .settings {
     display: flex;
-    border: 1px #dddddd solid;
+    border: 1px $lightColor solid;
     gap: 1rem;
     align-items: center;
     padding: 0.5rem 0.6rem;
     border-radius: 2rem;
+}
+
+@media(width > 1440px) {
+    .userIcon {
+        padding: 5px;
+        gap: .5rem;
+    }
+
+    .settings {
+        gap: .8rem;
+        padding: 0.4rem 0.5rem;
+        font-size: 14px;
+    }
+
+    .navBar {
+        ul {
+            li {
+                font-size: 12px;
+            }
+        }
+    }
+
 }

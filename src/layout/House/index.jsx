@@ -7,17 +7,20 @@ export default function House() {
     const myHouse = data.find(house => house.id == houseId)
     console.log(myHouse);
     return (
-        <>
-            <h1>
-                {myHouse.title}
-            </h1>
-            <div className={styles.imgGridContainer}>
-                <img src={myHouse.images} alt="House Images" />
-                <img src={myHouse.images} alt="House Images" />
-                <img src={myHouse.images} alt="House Images" />
-                <img src={myHouse.images} alt="House Images" />
-                <img src={myHouse.images} alt="House Images" />
+        <div className={styles.screenSize}>
+            <div className={styles.myHouseContainer}>
+                <h1>
+                    {myHouse.title}
+                </h1>
+                <div className={styles.imgGridContainer}>
+                    <img src={myHouse.images} alt="House Images" />
+                    <img src={myHouse.images} alt="House Images" />
+                    <img src={myHouse.images} alt="House Images" />
+                    <img src={myHouse.images} alt="House Images" />
+                    <img src={myHouse.images} alt="House Images" />
+                </div>
             </div>
-        </>
+        </div>
+
     )
 }

@@ -6,6 +6,7 @@
     --light-text: rgb(146, 141, 141);
     --text-color: #222;
     --bg-color: #fff;
+    --line-color: #dddddd;
 }
 
 $mainColor: var(--main-color);
@@ -14,6 +15,7 @@ $lightBorderClr: var(--light-border);
 $lightText: var(--light-text);
 $mainTextColor: var(--text-color);
 $mainBackgroundColor: var(--bg-color);
+$lightColor: var(--line-color);
 
 .flex-c {
     display: flex;

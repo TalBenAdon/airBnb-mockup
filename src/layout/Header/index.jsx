@@ -6,14 +6,17 @@ import { Outlet } from 'react-router-dom';
 export default function Header() {
     return (
         <>
-            <header className={styles.header}>
-                <div>
-                    <div className={styles.logo}> <LiaAirbnb />airbnb</div>
-                </div>
-                <HeaderNavbar />
+            <div className={styles.screenWidth}>
+                <header className={styles.header}>
+                    <div>
+                        <div className={styles.logoDiv}> <LiaAirbnb className={styles.icon} />airbnb</div>
+                    </div>
+                    <HeaderNavbar />
 
-            </header>
+                </header>
+            </div>
             <Outlet />
         </>
+
     )
 }

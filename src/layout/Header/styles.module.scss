@@ -3,13 +3,36 @@
 .header {
     justify-content: space-between;
     @extend .flex-c;
-    padding: 1rem 5rem;
+    width: 100%;
+    padding: .7rem 80px;
 
-    .logo {
-        color: $mainColor;
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        font-weight: 600;
+}
+
+.logoDiv {
+    color: $mainColor;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.screenWidth {
+    border-bottom: 1px $lightColor solid;
+    @extend .flex-c;
+    flex-direction: column;
+}
+
+@media(width > 1440px) {
+    .header {
+        max-width: 1120px;
+    }
+
+    .logoDiv {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .icon {
+        font-size: 35px;
     }
 }

@@ -1,0 +1,15 @@
+@import '../../vars';
+
+.header {
+    justify-content: space-between;
+    @extend .flex-c;
+    padding: 1rem 5rem;
+
+    .logo {
+        color: $mainColor;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+}

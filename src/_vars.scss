@@ -1,0 +1,22 @@
+:root {
+
+    --main-color: #ff385c;
+    --title-wight: 600;
+    --light-border: #dddddd;
+    --light-text: rgb(146, 141, 141);
+    --text-color: #222;
+    --bg-color: #fff;
+}
+
+$mainColor: var(--main-color);
+$subTitleWeight: var(--title-wight);
+$lightBorderClr: var(--light-border);
+$lightText: var(--light-text);
+$mainTextColor: var(--text-color);
+$mainBackgroundColor: var(--bg-color);
+
+.flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

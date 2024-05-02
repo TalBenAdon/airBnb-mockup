@@ -1,0 +1,77 @@
+@import '../../vars';
+
+.listContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .price {
+        font-weight: $subTitleWeight;
+        font-size: 14px;
+    }
+
+    .rating {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .locationRating {
+        display: flex;
+        justify-content: space-between;
+        min-width: 0;
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 0.8rem;
+    }
+
+    h2 {
+        font-size: 16px;
+
+    }
+
+    .title {
+        color: $lightText;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        li {
+            border: 1px $lightBorderClr solid;
+            border-radius: 1rem;
+            padding: 2px 8px;
+            display: flex;
+            color: $mainColor;
+            font-weight: 700;
+            gap: 5px;
+
+            p {
+                font-weight: $subTitleWeight;
+                color: black;
+            }
+        }
+
+    }
+}

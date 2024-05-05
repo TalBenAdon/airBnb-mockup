@@ -8,6 +8,13 @@
 
 }
 
+.mainHeader {
+    justify-content: space-between;
+    @extend .flex-c;
+    width: 100%;
+    padding: .7rem 80px;
+}
+
 .logoDiv {
     color: $mainColor;
     font-size: 30px;
